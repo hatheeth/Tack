@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="320dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    app:cardCornerRadius="24dp"
+    app:cardBackgroundColor="#D2C5B1"
+    app:cardElevation="8dp"
+    app:strokeWidth="0dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="36dp"
+        android:paddingBottom="36dp"
+        android:paddingStart="24dp"
+        android:paddingEnd="24dp"
+        android:gravity="center_horizontal">
+
+        <EditText
+            android:id="@+id/taskInput"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:hint="Enter Your Task"
+            android:textAlignment="center"
+            android:textColorHint="#B00020"
+            android:textColor="#B00020"
+            android:padding="12dp"
+            android:layout_marginBottom="32dp"
+            android:background="@drawable/rounded_input_bg"
+            android:elevation="2dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/doneButton"
+                android:layout_width="105dp"
+                android:layout_height="48dp"
+                android:text="Done"
+                android:textColor="#FBF0D6"
+                android:textSize="16sp"
+                android:textStyle="normal"
+                android:backgroundTint="#B40023"
+                android:layout_marginEnd="20dp"
+                app:cornerRadius="24dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/cancelButton"
+                android:layout_width="105dp"
+                android:layout_height="48dp"
+                android:text="Cancel"
+                android:textColor="#FBF0D6"
+                android:textSize="16sp"
+                android:textStyle="normal"
+                android:backgroundTint="#B40023"
+                app:cornerRadius="24dp" />
+
+        </LinearLayout>
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>
